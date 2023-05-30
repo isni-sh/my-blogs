@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const navigation = [
   { name: "Product", href: "#" },
